@@ -14,9 +14,6 @@ import { AngularFire, FirebaseObjectObservable } from 'angularfire2';
 export class PlayerComponent implements OnInit {
   playerId: string;
   player: FirebaseObjectObservable<any>;
-  // fieldGoal: number;
-  // threePoint: number;
-  // freeThrow: number;
 
   constructor(private router: Router, private route: ActivatedRoute, private location: Location, private rosterService: RosterService) { }
 
@@ -25,7 +22,6 @@ export class PlayerComponent implements OnInit {
       this.playerId = urlParameters['id'];
     });
     this.player = this.rosterService.getPlayerById(this.playerId);
-    // this.fieldGoal = this.player.fieldGoalsMade / this.player.fieldGoalAttempts;
   }
 
 }

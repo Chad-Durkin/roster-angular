@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url("http://wildprogrammer.com/chester/images/yearbook/VM33.JPG");
+  background-size: auto;
+}
+
+.template {
+  background-color: #15915b;
+  padding: 10px;
+}

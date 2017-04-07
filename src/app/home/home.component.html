@@ -1,18 +1,20 @@
-<div class="row">
-  <div class="col-md-4">
-    <h3>Display Players By Role</h3>
-    <select (change)="onChange($event.target.value)">
-      <option value="All Roles">All Roles</option>
-      <option value="Point Guard">Point Guard</option>
-      <option value="Small Forward">Small Forward</option>
-      <option value="Shooting Guard">Shooting Guard</option>
-      <option value="Power Forward">Power Forward</option>
-      <option value="Center">Center</option>
-    </select>
-  </div>
-  <div class="col-md-8">
-    <h1>Players</h1>
-    <div *ngFor="let player of playerRoster | async  | role:playerRole">
-      <h4><button class="playerButton" (click)="playerDetails(player.$key)">{{player.name}}'s Page</button></h4>
-  </div>
+<div class="template">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Display Players By Role</h3>
+      <select (change)="onChange($event.target.value)">
+        <option value="All Roles">All Roles</option>
+        <option value="Point Guard">Point Guard</option>
+        <option value="Small Forward">Small Forward</option>
+        <option value="Shooting Guard">Shooting Guard</option>
+        <option value="Power Forward">Power Forward</option>
+        <option value="Center">Center</option>
+      </select>
+    </div>
+    <div class="col-md-8">
+      <h1>Players</h1>
+      <div *ngFor="let player of playerRoster | async  | role:playerRole">
+        <h4><button class="playerButton" (click)="playerDetails(player.$key)">{{player.name}}'s Page</button></h4>
+      </div>
+    </div>
 </div>
