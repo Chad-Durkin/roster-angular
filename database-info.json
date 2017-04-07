@@ -14,12 +14,12 @@
       "blocks": "45",
       "steals": "30",
       "turnovers": "25",
-      "field-goal-attempts": "90",
-      "field-goals-made": "62",
-      "three-point-attempts": "5",
-      "three-points-made": "2",
-      "free-throw-attempts": "100",
-      "free-throws-made": "75"
+      "fieldGoalAttempts": "90",
+      "fieldGoalsMade": "62",
+      "threePointAttempts": "5",
+      "threePointsMmade": "2",
+      "freeThrowAttempts": "100",
+      "freeThrowsMade": "75"
     },
     {
       "name": "Cole Fanning",
@@ -35,12 +35,12 @@
       "blocks": "10",
       "steals": "100",
       "turnovers": "30",
-      "field-goal-attempts": "150",
-      "field-goals-made": "95",
-      "three-point-attempts": "25",
-      "three-points-made": "20",
-      "free-throw-attempts": "100",
-      "free-throws-made": "83"
+      "fieldGoalAttempts": "150",
+      "fieldGoalsMade": "95",
+      "threePointAttempts": "25",
+      "threePointsMmade": "20",
+      "freeThrowAttempts": "100",
+      "freeThrowsMade": "83"
     },
     {
       "name": "Topher Taylor",
@@ -56,12 +56,12 @@
       "blocks": "3",
       "steals": "100",
       "turnovers": "40",
-      "field-goal-attempts": "100",
-      "field-goals-made": "90",
-      "three-point-attempts": "30",
-      "three-points-made": "20",
-      "free-throw-attempts": "100",
-      "free-throws-made": "96"
+      "fieldGoalAttempts": "100",
+      "fieldGoalsMade": "90",
+      "threePointAttempts": "30",
+      "threePointsMmade": "20",
+      "freeThrowAttempts": "100",
+      "freeThrowsMade": "96"
     },
     {
       "name": "Keith Wann",
@@ -77,12 +77,12 @@
       "blocks": "40",
       "steals": "30",
       "turnovers": "25",
-      "field-goal-attempts": "100",
-      "field-goals-made": "70",
-      "three-point-attempts": "1",
-      "three-points-made": "1",
-      "free-throw-attempts": "100",
-      "free-throws-made": "85"
+      "fieldGoalAttempts": "100",
+      "fieldGoalsMade": "70",
+      "threePointAttempts": "1",
+      "threePointsMmade": "1",
+      "freeThrowAttempts": "100",
+      "freeThrowsMade": "85"
     },
     {
       "name": "Ryan Newell",
@@ -98,12 +98,12 @@
       "blocks": "10",
       "steals": "80",
       "turnovers": "35",
-      "field-goal-attempts": "150",
-      "field-goals-made": "110",
-      "three-point-attempts": "30",
-      "three-points-made": "25",
-      "free-throw-attempts": "100",
-      "free-throws-made": "93"
+      "fieldGoalAttempts": "150",
+      "fieldGoalsMade": "110",
+      "threePointAttempts": "30",
+      "threePointsMmade": "25",
+      "freeThrowAttempts": "100",
+      "freeThrowsMade": "93"
     }
   ]
 }

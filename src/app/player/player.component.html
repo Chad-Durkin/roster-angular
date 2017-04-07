@@ -1,3 +1,35 @@
-<p>
-  player works!
-</p>
+<div class="row">
+  <div class="col-md-4">
+    <img src="{{(player | async)?.picture}}" alt="{{(player | async)?.name}}">
+  </div>
+  <div class="col-md-8">
+    <h1>{{(player | async)?.name}}, {{(player | async)?.year}}</h1>
+    <h2>Height: {{(player | async)?.height}}, Weight: {{(player | async)?.weight}}</h2>
+  </div>
+</div>
+<div class="row">
+  <h1>Games: {{(player | async)?.games}}</h1>
+</div>
+<div class="row">
+  <div class="col-md-2">
+    <h1>Points: {{(player | async)?.points}}</h1>
+    <!-- <h1>Field Goal %: </h1>
+    <h1>Three Point %: </h1>
+    <h1>Free Throw %: </h1> -->
+  </div>
+  <div class="col-md-2">
+    <h1>Assists: {{(player | async)?.assists}}</h1>
+  </div>
+  <div class="col-md-2">
+    <h1>Rebounds: {{(player | async)?.rebounds}}</h1>
+  </div>
+  <div class="col-md-2">
+    <h1>Blocks: {{(player | async)?.blocks}}</h1>
+  </div>
+  <div class="col-md-2">
+    <h1>Steals: {{(player | async)?.steals}}</h1>
+  </div>
+  <div class="col-md-2">
+    <h1>Turnovers: {{(player | async)?.turnovers}}</h1>
+  </div>
+</div>
