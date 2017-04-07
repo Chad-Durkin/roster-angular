@@ -14,4 +14,8 @@ export class RosterService {
   getRoster() {
     return this.roster;
   }
+
+  getPlayerById(playerId: string){
+    return this.angularFire.database.object('roster/' + playerId);
+  }
 }

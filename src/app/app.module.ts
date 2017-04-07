@@ -8,6 +8,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RolePipe } from './role.pipe';
+import { PlayerComponent } from './player/player.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -20,7 +21,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    RolePipe
+    RolePipe,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,

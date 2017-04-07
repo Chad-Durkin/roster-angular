@@ -13,9 +13,6 @@
   <div class="col-md-8">
     <h1>Players</h1>
     <div *ngFor="let player of playerRoster | async  | role:playerRole">
-      <h2>{{player.name}}, {{player.year}}</h2>
-      <h3>Height: {{player.height}} Weight: {{player.weight}}</h3>
-      <h3>{{player.role}}</h3>
-    </div>
+      <h4><button class="playerButton" (click)="playerDetails(player.$key)">{{player.name}}'s Page</button></h4>
   </div>
 </div>
