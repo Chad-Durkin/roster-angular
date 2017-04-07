@@ -25,4 +25,10 @@ export class AdminComponent implements OnInit {
   editPlayer(playerToEdit: Roster) {
     this.router.navigate(['editPlayer', playerToEdit]);
   }
+
+  deletePlayer(playerToDelete: Roster) {
+    this.rosterService.deleteFromRoster(playerToDelete);
+    this.router.navigate(['']);
+  }
+
 }

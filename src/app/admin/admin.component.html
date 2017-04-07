@@ -4,7 +4,7 @@
   </div>
   <div class="col-md-6">
       <ul *ngFor="let player of playerRoster | async">
-        <li>{{player.name}} - <button (click)="editPlayer(player.$key)">Edit</button></li>
+        <li>{{player.name}} - <button (click)="editPlayer(player.$key)">Edit</button><button (click)="deletePlayer(player.$key)">Delete</button></li>
       </ul>
   </div>
   <!-- <div class="col-md-2">

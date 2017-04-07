@@ -27,4 +27,9 @@ export class RosterService {
     var playerInFirebase = this.getPlayerById(playerId);
     playerInFirebase.update({name: localPlayer.name, role: localPlayer.role, height: localPlayer.height, weight: localPlayer.weight, year: localPlayer.year, picture: localPlayer.picture});
   }
+
+  deleteFromRoster(localPlayerToDelete) {
+    var playerEntryInFirebase = this.getPlayerById(localPlayerToDelete);
+    playerEntryInFirebase.remove();
+  }
 }
