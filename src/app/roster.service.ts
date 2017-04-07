@@ -25,7 +25,7 @@ export class RosterService {
 
   updateRoster(localPlayer: Roster, playerId: string) {
     var playerInFirebase = this.getPlayerById(playerId);
-    playerInFirebase.update({name: localPlayer.name, role: localPlayer.role, height: localPlayer.height, weight: localPlayer.weight, year: localPlayer.year, picture: localPlayer.picture});
+    playerInFirebase.update({name: localPlayer.name, role: localPlayer.role, height: localPlayer.height, weight: localPlayer.weight, year: localPlayer.year, picture: localPlayer.picture, games: localPlayer.games, assists: localPlayer.assists, points: localPlayer.points, rebounds: localPlayer.rebounds, blocks: localPlayer.blocks, steals: localPlayer.steals, turnovers: localPlayer.turnovers});
   }
 
   deleteFromRoster(localPlayerToDelete) {

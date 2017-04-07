@@ -1,11 +1,4 @@
 export class Roster {
-  public games: number = 0;
-  public assists: number = 0;
-  public points: number = 0;
-  public rebounds: number = 0;
-  public blocks: number = 0;
-  public steals: number = 0;
-  public turnovers: number = 0;
   public fieldGoalAttempts: number = 0;
   public fieldGoalslMade: number = 0;
   public threePointAttempts: number = 0;
@@ -13,5 +6,5 @@ export class Roster {
   public freeThrowAttempts: number = 0;
   public freeThrowsMade: number = 0;
 
-  constructor(public name: string, public role: string, public height: string, public weight: string, public year: string, public picture: string) { }
+  constructor(public name: string, public role: string, public height: string, public weight: string, public year: string, public picture: string, public games = 0, public assists = 0, public points = 0, public rebounds = 0, public blocks = 0, public steals = 0, public turnovers = 0) { }
 }

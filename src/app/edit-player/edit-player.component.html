@@ -35,5 +35,33 @@
     <label for="picture">Profile Picture</label>
     <input #newPicture value="{{(player | async)?.picture}}">
   </div>
-  <button (click)="editPlayer(newName.value, newRole.value, newHeight.value, newWeight.value, newYear.value, newPicture.value)">Edit Player</button><button (click)="toHome()">Home Page</button>
+  <div class="form-group">
+    <label for="games">Games</label>
+    <input type="number" #newGames value="{{(player | async)?.games}}">
+  </div>
+  <div class="form-group">
+    <label for="assists">Assists</label>
+    <input type="number" #newAssists value="{{(player | async)?.assists}}">
+  </div>
+  <div class="form-group">
+    <label for="points">Points</label>
+    <input type="number" #newPoints value="{{(player | async)?.points}}">
+  </div>
+  <div class="form-group">
+    <label for="rebounds">Rebounds</label>
+    <input type="number" #newRebounds value="{{(player | async)?.rebounds}}">
+  </div>
+  <div class="form-group">
+    <label for="blocks">Blocks</label>
+    <input type="number" #newBlocks value="{{(player | async)?.blocks}}">
+  </div>
+  <div class="form-group">
+    <label for="steals">Steals</label>
+    <input type="number" #newSteals value="{{(player | async)?.steals}}">
+  </div>
+  <div class="form-group">
+    <label for="turnovers">Turnovers</label>
+    <input type="number" #newTurnovers value="{{(player | async)?.turnovers}}">
+  </div>
+  <button (click)="editPlayer(newName.value, newRole.value, newHeight.value, newWeight.value, newYear.value, newPicture.value, newGames.value, newAssists.value, newPoints.value, newRebounds.value, newBlocks.value, newSteals.value, newTurnovers.value)">Edit Player</button><button (click)="toHome()">Home Page</button>
 </div>

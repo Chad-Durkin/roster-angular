@@ -25,8 +25,8 @@ export class EditPlayerComponent implements OnInit {
     this.player = this.rosterService.getPlayerById(this.playerId);
   }
 
-  editPlayer(name: string, role: string, height: string, weight: string, year: string, picture: string) {
-    var editPlayer: Roster = new Roster(name, role, height, weight, year, picture);
+  editPlayer(name: string, role: string, height: string, weight: string, year: string, picture: string, games: number, assists: number, points: number, rebounds: number, blocks: number, steals: number, turnovers: number) {
+    var editPlayer: Roster = new Roster(name, role, height, weight, year, picture, games, assists, points, rebounds, blocks, steals, turnovers);
 
     this.rosterService.updateRoster(editPlayer, this.playerId);
       this.router.navigate(['']);
