@@ -1,0 +1,38 @@
+<div class="addPlayer">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input #newName>
+  </div>
+  <div class="form-group">
+    <label for="role">Role</label>
+    <select #newRole>
+      <option value="Shooting Guard">Shooting Guard</option>
+      <option value="Point Guard">Point Guard</option>
+      <option value="Small Forward">Small Forward</option>
+      <option value="Power Forward">Power Forward</option>
+      <option value="Center">Center</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="height">Height</label>
+    <input #newHeight>
+  </div>
+  <div class="form-group">
+    <label for="weight">Weight</label>
+    <input #newWeight>
+  </div>
+  <div class="form-group">
+    <label for="year">Year</label>
+    <select #newYear>
+      <option value="Senior">Senior</option>
+      <option value="Junior">Junior</option>
+      <option value="Sophomore">Sophomore</option>
+      <option value="Freshman">Freshman</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="picture">Profile Picture</label>
+    <input #newPicture>
+  </div>
+  <button (click)="addPlayer(newName.value, newRole.value, newHeight.value, newWeight.value, newYear.value, newPicture.value)">Add To Roster</button><button (click)="toHome()">Home Page</button>
+</div>

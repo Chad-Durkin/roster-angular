@@ -9,6 +9,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RolePipe } from './role.pipe';
 import { PlayerComponent } from './player/player.component';
+import { AddPlayerComponent } from './add-player/add-player.component';
+import { AboutComponent } from './about/about.component';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -22,7 +25,10 @@ export const firebaseConfig = {
     AppComponent,
     HomeComponent,
     RolePipe,
-    PlayerComponent
+    PlayerComponent,
+    AddPlayerComponent,
+    AboutComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

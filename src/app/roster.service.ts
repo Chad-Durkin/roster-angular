@@ -18,4 +18,8 @@ export class RosterService {
   getPlayerById(playerId: string){
     return this.angularFire.database.object('roster/' + playerId);
   }
+
+  addToRoster(newPlayer: Roster) {
+    this.roster.push(newPlayer);
+  }
 }

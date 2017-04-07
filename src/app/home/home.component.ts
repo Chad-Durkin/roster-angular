@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
   }
 
   playerDetails(playerId: string) {
-    this.router.navigate(['player', playerId])
+    this.router.navigate(['player', playerId]);
   }
 
 }
