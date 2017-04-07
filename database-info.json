@@ -1,0 +1,39 @@
+{
+  "roster": [
+    {
+      "name": "Chad Durkin",
+      "role": "Power Forward",
+      "height": "6'7",
+      "weight": "200",
+      "year": "Senior"
+    },
+    {
+      "name": "Cole Fanning",
+      "role": "Shooting Guard",
+      "height": "6'2",
+      "weight": "180",
+      "year": "Senior"
+    },
+    {
+      "name": "Topher Taylor",
+      "role": "Point Guard",
+      "height": "5'10",
+      "weight": "160",
+      "year": "Junior"
+    },
+    {
+      "name": "Keith Wann",
+      "role": "Center",
+      "height": "6'3",
+      "weight": "230",
+      "year": "Senior"
+    },
+    {
+      "name": "Ryan Newell",
+      "role": "Small Forward",
+      "height": "6'3",
+      "weight": "180",
+      "year": "Senior"
+    }
+  ]
+}
