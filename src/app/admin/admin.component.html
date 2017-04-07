@@ -2,10 +2,12 @@
   <div class="col-md-4">
       <h3><button (click)="addPlayer()">Add Player To Roster</button></h3>
   </div>
-  <!-- <div class="col-md-4">
-      <h3><button (click)="addPlayer()">Add Player To Roster</button></h3>
+  <div class="col-md-6">
+      <ul *ngFor="let player of playerRoster | async">
+        <li>{{player.name}} - <button (click)="editPlayer(player.$key)">Edit</button></li>
+      </ul>
   </div>
-  <div class="col-md-4">
+  <!-- <div class="col-md-2">
       <h3><button (click)="addPlayer()">Add Player To Roster</button></h3>
   </div> -->
 </div>

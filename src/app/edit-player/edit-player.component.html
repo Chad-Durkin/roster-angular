@@ -1,0 +1,39 @@
+<div class="editPlayer">
+  <h1>Edit {{(player | async)?.name}}</h1>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input #newName value="{{(player | async)?.name}}">
+  </div>
+  <div class="form-group">
+    <label for="role">Role</label>
+    <select #newRole>
+      <option value="Shooting Guard">Shooting Guard</option>
+      <option value="Point Guard">Point Guard</option>
+      <option value="Small Forward">Small Forward</option>
+      <option value="Power Forward">Power Forward</option>
+      <option value="Center">Center</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="height">Height</label>
+    <input #newHeight value="{{(player | async)?.height}}">
+  </div>
+  <div class="form-group">
+    <label for="weight">Weight</label>
+    <input #newWeight value="{{(player | async)?.weight}}">
+  </div>
+  <div class="form-group">
+    <label for="year">Year</label>
+    <select #newYear>
+      <option value="Senior">Senior</option>
+      <option value="Junior">Junior</option>
+      <option value="Sophomore">Sophomore</option>
+      <option value="Freshman">Freshman</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="picture">Profile Picture</label>
+    <input #newPicture value="{{(player | async)?.picture}}">
+  </div>
+  <button (click)="editPlayer(newName.value, newRole.value, newHeight.value, newWeight.value, newYear.value, newPicture.value)">Edit Player</button><button (click)="toHome()">Home Page</button>
+</div>

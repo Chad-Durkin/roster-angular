@@ -22,4 +22,9 @@ export class RosterService {
   addToRoster(newPlayer: Roster) {
     this.roster.push(newPlayer);
   }
+
+  updateRoster(localPlayer: Roster, playerId: string) {
+    var playerInFirebase = this.getPlayerById(playerId);
+    playerInFirebase.update({name: localPlayer.name, role: localPlayer.role, height: localPlayer.height, weight: localPlayer.weight, year: localPlayer.year, picture: localPlayer.picture});
+  }
 }

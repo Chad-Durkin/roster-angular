@@ -11,13 +11,18 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
   providers: [RosterService]
 })
 export class AdminComponent implements OnInit {
-
+  playerRoster: FirebaseListObservable<any[]>;
   constructor(private rosterService: RosterService, private router: Router) { }
 
   ngOnInit() {
+      this.playerRoster = this.rosterService.getRoster();
   }
 
   addPlayer() {
     this.router.navigate(['addPlayer']);
+  }
+
+  editPlayer(playerToEdit: Roster) {
+    this.router.navigate(['editPlayer', playerToEdit]);
   }
 }
