@@ -1,7 +1,7 @@
 {
   "roster": [
     {
-      "name": "Thomas Nelson",
+      "name": "Bugs B",
       "role": "Power Forward",
       "height": "6'7",
       "weight": "200",
@@ -22,7 +22,7 @@
       "freeThrowsMade": "75"
     },
     {
-      "name": "Cole Fanning",
+      "name": "Mr. Marsh",
       "role": "Shooting Guard",
       "height": "6'2",
       "weight": "180",
@@ -43,7 +43,7 @@
       "freeThrowsMade": "83"
     },
     {
-      "name": "Topher Taylor",
+      "name": "W. Coyote",
       "role": "Point Guard",
       "height": "5'10",
       "weight": "160",
@@ -64,7 +64,7 @@
       "freeThrowsMade": "96"
     },
     {
-      "name": "Keith Wann",
+      "name": "Foghorn Leghorn",
       "role": "Center",
       "height": "6'3",
       "weight": "230",
@@ -85,7 +85,7 @@
       "freeThrowsMade": "85"
     },
     {
-      "name": "Ryan Newell",
+      "name": "Double D",
       "role": "Small Forward",
       "height": "6'3",
       "weight": "180",
